@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: localhost:3242
+- Generation Time: Aug 02, 2024 at 06:51 PM
+- Server version: 10.4.32-MariaDB
+- PHP Version: 8.2.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="casestudy" collation="latin1_general_cs" charset="latin1">
+            <pma:table name="rooms">
+                CREATE TABLE `rooms` (
+                  `roomid` varchar(25) DEFAULT NULL,
+                  `category` varchar(50) DEFAULT NULL,
+                  `roomname` varchar(50) DEFAULT NULL,
+                  `image` varchar(255) DEFAULT NULL,
+                  `capacity` varchar(50) DEFAULT NULL,
+                  `rating` int(11) DEFAULT NULL,
+                  `price` int(11) DEFAULT NULL,
+                  `features` text DEFAULT NULL,
+                  `facilities` text DEFAULT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'casestudy'
+    -->
+    <database name="casestudy">
+        <!-- Table rooms -->
+        <table name="rooms">
+            <column name="roomid">BeachBungalow02</column>
+            <column name="category">villas</column>
+            <column name="roomname">Beachcomber Bungalow</column>
+            <column name="image">images/rooms/BeachcomberBungalow.png</column>
+            <column name="capacity">2 adults and up to 2 children</column>
+            <column name="rating">5</column>
+            <column name="price">13000</column>
+            <column name="features">Private entrance, outdoor living space, personal concierge service, gourmet kitchenette</column>
+            <column name="facilities">Wi-Fi, private beach access, personal concierge, outdoor pool</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">CoralChamber10</column>
+            <column name="category">standardRooms</column>
+            <column name="roomname">Coral Chamber</column>
+            <column name="image">images/rooms/CoralChamber.png</column>
+            <column name="capacity">1-2 adults</column>
+            <column name="rating">3</column>
+            <column name="price">5000</column>
+            <column name="features">Comfortable bedding, climate control, flat-screen TV, in-room coffee maker, complimentary toiletries</column>
+            <column name="facilities">Wi-Fi, room service, daily housekeeping</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">CoralDreamsSuite11</column>
+            <column name="category">Luxury Suite</column>
+            <column name="roomname">CoralDreamsSuite</column>
+            <column name="image">images/rooms/CoralDreamsSuite.png</column>
+            <column name="capacity">2 adults and up to 3 children</column>
+            <column name="rating">5</column>
+            <column name="price">18000</column>
+            <column name="features">Private balcony with ocean view, spacious living area, premium bedding, personalized concierge service, complimentary breakfast</column>
+            <column name="facilities">Wi-Fi, 24-hour room service, private beach access, fitness center, infinity pool</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">MarinerMoor09</column>
+            <column name="category">standardRooms</column>
+            <column name="roomname">Mariners Standard</column>
+            <column name="image">images/rooms/MarinersStandard.png</column>
+            <column name="capacity">1-2 adults</column>
+            <column name="rating">3</column>
+            <column name="price">6500</column>
+            <column name="features">Comfortable bedding, climate control, flat-screen TV, in-room coffee maker, complimentary toiletries</column>
+            <column name="facilities">Wi-Fi, room service, daily housekeeping</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">NauticalNest01</column>
+            <column name="category">villas</column>
+            <column name="roomname">Nautical Nook Villa</column>
+            <column name="image">images/rooms/NauticalNookVilla.png</column>
+            <column name="capacity">2 adults and up to 2 children</column>
+            <column name="rating">5</column>
+            <column name="price">15500</column>
+            <column name="features">Private entrance, outdoor living space, personal concierge service, gourmet kitchenette</column>
+            <column name="facilities">Wi-Fi, private beach access, personal concierge, outdoor pool</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">OceanOasis08</column>
+            <column name="category">deluxeRooms</column>
+            <column name="roomname">Oceanview Oasis</column>
+            <column name="image">images/rooms/OceanviewOasis.png</column>
+            <column name="capacity">2 adults, option for 1 child</column>
+            <column name="rating">4</column>
+            <column name="price">7000</column>
+            <column name="features">Private balcony, luxury linens, minibar, high-speed internet, premium bath products</column>
+            <column name="facilities">Wi-Fi, room service, concierge service, fitness center access</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">PearlPinnacle03</column>
+            <column name="category">suites</column>
+            <column name="roomname">Pearl Penthouse</column>
+            <column name="image">images/rooms/PearlPenthouse.png</column>
+            <column name="capacity">2 adults, option for additional children</column>
+            <column name="rating">5</column>
+            <column name="price">12500</column>
+            <column name="features">Spacious living area, deluxe bathroom with spa-like amenities, room service menu, daily newspaper delivery</column>
+            <column name="facilities">Wi-Fi, 24-hour room service, spa services, outdoor pool</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">SandySanctum07</column>
+            <column name="category">deluxeRooms</column>
+            <column name="roomname">Sandy Sanctuary Deluxe</column>
+            <column name="image">images/rooms/SandySanctuaryDeluxe.png</column>
+            <column name="capacity">2 adults, option for 1 child</column>
+            <column name="rating">4</column>
+            <column name="price">9000</column>
+            <column name="features">Private balcony, luxury linens, minibar, high-speed internet, premium bath products</column>
+            <column name="facilities">Wi-Fi, room service, concierge service, fitness center access</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">SeabreezeSojourn04</column>
+            <column name="category">suites</column>
+            <column name="roomname">Seabreeze Suite</column>
+            <column name="image">images/rooms/SeabreezeSuite.png</column>
+            <column name="capacity">2 adults, option for additional children</column>
+            <column name="rating">5</column>
+            <column name="price">10000</column>
+            <column name="features">Spacious living area, deluxe bathroom with spa-like amenities, room service menu, daily newspaper delivery</column>
+            <column name="facilities">Wi-Fi, 24-hour room service, spa services, outdoor pool</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">SunsetSplendorSuite12</column>
+            <column name="category">Luxury Suite</column>
+            <column name="roomname">SunsetSplendorSuite</column>
+            <column name="image">images/rooms/SunsetSplendorSuite.png</column>
+            <column name="capacity">2 adults and up to 3 children</column>
+            <column name="rating">5</column>
+            <column name="price">20000</column>
+            <column name="features">Panoramic views of the sunset, separate living and sleeping areas, marble bathroom with Jacuzzi, personalized concierge service, private terrace</column>
+            <column name="facilities">Wi-Fi, 24-hour room service, private beach access, fitness center, infinity pool</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">TidalTreasure06</column>
+            <column name="category">familyRooms</column>
+            <column name="roomname">Tidal Treasure Family Room</column>
+            <column name="image">images/rooms/TidalTreasureFamilyRoom.png</column>
+            <column name="capacity">2 adults and 2 children</column>
+            <column name="rating">5</column>
+            <column name="price">9500</column>
+            <column name="features">Kid-friendly furnishings, game console, snacks and drinks, child care services upon request</column>
+            <column name="facilities">Wi-Fi, kids’ club, shuttle service, laundry service</column>
+        </table>
+        <table name="rooms">
+            <column name="roomid">WaveWhisper05</column>
+            <column name="category">familyRooms</column>
+            <column name="roomname">Wave Whisperer Family Suite</column>
+            <column name="image">images/rooms/WaveWhispererFamilySuite.png</column>
+            <column name="capacity">2 adults and 2 children</column>
+            <column name="rating">5</column>
+            <column name="price">11000</column>
+            <column name="features">Kid-friendly furnishings, game console, snacks and drinks, child care services upon request</column>
+            <column name="facilities">Wi-Fi, kids’ club, shuttle service, laundry service</column>
+        </table>
+    </database>
+</pma_xml_export>
